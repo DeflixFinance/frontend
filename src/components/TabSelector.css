@@ -1,0 +1,16 @@
+.tab-button {
+    padding: 0 0.5rem 1rem 0.5rem;
+    border-color: transparent;
+    border-bottom-width: 2px;
+    align-items: center;
+    line-height: 1.25rem;
+    display: inline-flex;
+    margin-right: 2rem;
+    background-color: transparent;
+    color: rgb(184, 184, 184)
+}
+
+.tab-button:hover, .tab-button.active {
+    color: #fff;
+    border-bottom: 2px solid #d1d5db;
+}

@@ -1,0 +1,15 @@
+.socialLinks{
+    padding-top: 10vh;
+}
+.socialLinks svg {   
+    transition: all 0.25s;
+    transform-origin: 50% 50%;
+}
+
+.socialLinks svg:hover {
+    transform: scale(1.2);
+}
+
+.socialLinks a {
+    margin-right: 32px;
+}

@@ -1,0 +1,10 @@
+.spanBtn {
+    cursor: pointer;
+    color: #c2374f;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.spanBtn:hover{
+    color: #9f2d41
+}

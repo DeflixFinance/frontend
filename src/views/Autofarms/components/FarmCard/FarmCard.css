@@ -1,0 +1,14 @@
+.fcard {
+    transition: all 0.25s;
+    transform-origin: 50% 50%;
+    cursor: pointer;
+}
+
+.fcard:hover {
+    transform: scale(1.02);
+    background-color: #171b1fa1;
+}
+
+.fcard.user-staked {
+    border: 2px solid #c2374f;
+}

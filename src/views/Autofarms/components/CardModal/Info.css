@@ -1,0 +1,11 @@
+.info-row {
+    display: flex;
+}
+
+.info-row .label {
+    padding-right: 5px;
+}
+
+.info-row .data {
+    font-weight: bold;
+}

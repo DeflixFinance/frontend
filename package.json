@@ -1,0 +1,71 @@
+{
+  "name": "deflix",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@binance-chain/bsc-connector": "^1.0.0",
+    "@ethersproject/experimental": "^5.5.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@popperjs/core": "^2.11.0",
+    "@reduxjs/toolkit": "^1.6.2",
+    "@wagyu-swap-libs/wagyu-swap-core": "git://github.com/wagyuswapapp/wagyu-swap-core.git#f819955ce5d0d8a34d1908ca4b59d14466c35ce",
+    "@wagyu-swap/sdk": "git://github.com/wagyuswapapp/wagyu-swap-sdk.git",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "bignumber.js": "^9.0.1",
+    "ethers": "^5.5.1",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-countup": "^6.1.0",
+    "react-dom": "^17.0.2",
+    "react-headless-tabs": "^4.0.1",
+    "react-helmet-async": "^1.1.2",
+    "react-popper": "^2.2.5",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "react-transition-group": "^4.4.2",
+    "styled-components": "^5.3.3",
+    "styled-system": "^5.1.5",
+    "typescript": "^4.5.2",
+    "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^27.0.3",
+    "@types/lodash": "^4.14.177",
+    "@types/node": "^16.11.9",
+    "@types/react": "^17.0.35",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-system": "^5.1.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "serve -s build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
