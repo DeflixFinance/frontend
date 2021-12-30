@@ -92,7 +92,7 @@ const Farms: React.FC = () => {
 
     return (
       <Container paddingTop="1em">
-        <H2Title>FARMS</H2Title>
+        <H2Title>Auto-compounding Vaults</H2Title>
         <FlexLayout>
           {farms.map((farm) => (
             <FarmCard

@@ -37,7 +37,7 @@ const Info: React.FC<InfoProps> = ({ lpLabel, farm, farmUrl, tokenUrl, displayAp
                 <span className="label">Performance:</span><span className="data">3.5%</span>
             </div>
             <div className="info-row">
-                <span className="label">Deposit:</span><span className="data">0%</span>
+                <span className="label">Deposit:</span><span className="data">&#8804;0.1%</span>
             </div>
             <div className="info-row">
                 <span className="label">Widthdrawal:</span><span className="data">0%</span>
