@@ -11,7 +11,7 @@ const useMigrateFromTheirFarm = (theirPid: number, ourPid: number) => {
       await unstakeFarm(wagFarmContract, theirPid, amount, 1)
       await stakeFarm(deflixMainStakingContract, ourPid, amount)
     },
-    [wagFarmContract, theirPid, ourPid]
+    [deflixMainStakingContract, wagFarmContract, theirPid, ourPid]
   )
 
   return { onMigrate: handleMigrate }
