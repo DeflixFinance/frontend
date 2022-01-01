@@ -124,6 +124,18 @@ const autoFarms: SerializedAutoFarmConfig[] = [
     token: serializedTokens.swapz,
     quoteToken: serializedTokens.wag
   },
+  {
+    theirPid: 12,
+    ourPid: 9,
+    ...WagFarm,
+    lpSymbol: 'WAG_USDV LP',
+    lpAddresses: {
+      111: '',
+      106: '0x545Dad8f8F934b6E5fa408FEC3da59651228Ee9E',
+    },
+    token: serializedTokens.usdv,
+    quoteToken: serializedTokens.wag
+  }  
 ]
 
 

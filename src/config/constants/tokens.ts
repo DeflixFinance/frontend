@@ -76,6 +76,14 @@ export const mainnetTokens = {
     'SWAPZ.app',
     'https://swapz.app',
   ),
+  usdv: new Token(
+    MAINNET,
+    '0xcd7509b76281223f5b7d3ad5d47f8d7aa5c2b9bf',
+    18,
+    'USDV',
+    'USD Velero Stablecoin',
+    'https://velero.finance/',
+  ),
 }
 
 export const testnetTokens = {
