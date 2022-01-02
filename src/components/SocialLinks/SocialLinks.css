@@ -1,15 +1,23 @@
-.socialLinks{
-    padding-top: 10vh;
+.socialLinks {    
+    padding-top: 10vh;    
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.socialLinks svg {   
+
+@media (min-width: 1024px) {
+    .socialLinks {
+        max-width: 600px;
+    }
+}
+
+
+.socialLinks svg {
     transition: all 0.25s;
     transform-origin: 50% 50%;
 }
 
 .socialLinks svg:hover {
     transform: scale(1.2);
-}
-
-.socialLinks a {
-    margin-right: 32px;
 }
