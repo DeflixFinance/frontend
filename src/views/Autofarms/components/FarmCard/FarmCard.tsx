@@ -116,8 +116,16 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, apr, apy, cakePrice, account 
         </Flex>
       </Flex>
       <Flex justifyContent="space-between" alignItems="center" marginTop="20px" style={{ color: "white" }}>
-        <Flex><Balance fontSize='16px' value={totalLiquidity.liquidity} prefix='$' suffix={totalLiquidity.suffix} decimals={2} />&nbsp;TVL</Flex>
-        {hasStakedBalance && <Flex>Your deposit: &nbsp;<Balance fontSize='16px' value={fullBalanceNumber.times(lpPrice).toNumber()} decimals={2} prefix='$' /></Flex>}
+        <Flex flexDirection="column">
+          <Balance fontSize='16px' value={totalLiquidity.liquidity} prefix='$' suffix={totalLiquidity.suffix} decimals={2} />
+          <Text>TVL</Text>
+        </Flex>
+        {hasStakedBalance && (
+          <Flex flexDirection="column">
+            <Balance fontSize='16px' value={fullBalanceNumber.times(lpPrice).toNumber()} decimals={2} prefix='$' />
+            <Text>Your deposit</Text>
+          </Flex>
+        )}
       </Flex>
     </FCard>
   )
