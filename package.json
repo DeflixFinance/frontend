@@ -5,9 +5,9 @@
   "dependencies": {
     "@binance-chain/bsc-connector": "^1.0.0",
     "@ethersproject/experimental": "^5.5.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@fortawesome/fontawesome-svg-core": "1.3.0",
+    "@fortawesome/free-solid-svg-icons": "6.0.0",
+    "@fortawesome/react-fontawesome": "0.1.17",
     "@popperjs/core": "^2.11.0",
     "@reduxjs/toolkit": "^1.6.2",
     "@wagyu-swap-libs/wagyu-swap-core": "git://github.com/wagyuswapapp/wagyu-swap-core.git#f819955ce5d0d8a34d1908ca4b59d14466c35ce",

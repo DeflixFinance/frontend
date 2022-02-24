@@ -1,4 +1,4 @@
-import { ChainId } from '@wagyu-swap/sdk'
+import { ChainId } from "@wagyu-swap/sdk"
 import contracts from './contracts'
 import { serializeTokens } from './tokens'
 import { SerializedAutoFarmConfig } from './types'
@@ -12,7 +12,7 @@ const serializedTokens = serializeTokens()
 const WagFarm = {
   theirFarm: "Wagyu Swap",
   theirFarmUrl: "https://www.wagyuswap.app/",
-  theirFarmAddress: contracts.WAGFarm  
+  theirFarmAddress: contracts.WAGFarm
 }
 
 const autoFarms: SerializedAutoFarmConfig[] = [
@@ -24,7 +24,7 @@ const autoFarms: SerializedAutoFarmConfig[] = [
     lpAddresses: {
       111: '0xdC415f9c745a28893b0Cbb6A8eaC1bb6ed42C581',
       106: '0x33f879690C165cC320B0BA04cEb1F9CeaC80F376',
-    },    
+    },
     token: serializedTokens.wag,
     quoteToken: serializedTokens.wvlx,
   },
@@ -135,8 +135,19 @@ const autoFarms: SerializedAutoFarmConfig[] = [
     },
     token: serializedTokens.usdv,
     quoteToken: serializedTokens.wag
-  }  
+  },
+  {
+    theirPid: 13,
+    ourPid: 10,
+    ...WagFarm,
+    lpSymbol: 'WAG_BUSD LP',
+    lpAddresses: {
+      111: '',
+      106: '0x339977398975dcD543f3873194B9238A96Ac79dE',
+    },
+    token: serializedTokens.busd,
+    quoteToken: serializedTokens.wag
+  }
 ]
-
 
 export default autoFarms
