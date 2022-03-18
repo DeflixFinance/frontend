@@ -84,6 +84,30 @@ export const mainnetTokens = {
     'USD Velero Stablecoin',
     'https://velero.finance/',
   ),
+  vdgt: new Token(
+    MAINNET,
+    '0xd12f7a98c0d740e7ec82e8caf94eb79c56d1b623',
+    18,
+    'VDGT',
+    'VELERO',
+    'https://velero.finance/',
+  ),
+  dai: new Token(
+    MAINNET,
+    '0xe3f5a90f9cb311505cd691a46596599aa1a0ad7d',
+    18,
+    'DAI',
+    'dai',
+    'https://makerdao.com/'
+  ),
+  wbtc: new Token(
+    MAINNET,
+    '0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c',
+    18,
+    'WBTC',
+    'Wrapped Bitcoin',
+    'https://wbtc.network/',
+  ),
 }
 
 export const testnetTokens = {

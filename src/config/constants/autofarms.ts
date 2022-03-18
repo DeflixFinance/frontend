@@ -147,7 +147,56 @@ const autoFarms: SerializedAutoFarmConfig[] = [
     },
     token: serializedTokens.busd,
     quoteToken: serializedTokens.wag
-  }
+  },
+  // 2022-18-03
+  {
+    theirPid: 14,
+    ourPid: 11,
+    ...WagFarm,
+    lpSymbol: 'VLX_VDGT LP',
+    lpAddresses: {
+      111: '',
+      106: '0x7b714BC5dD176EaA198fe6C07E415a87A40dc858',
+    },
+    token: serializedTokens.vdgt,
+    quoteToken: serializedTokens.wvlx,
+  },
+  {
+    theirPid: 15,
+    ourPid: 12,
+    ...WagFarm,
+    lpSymbol: 'BUSD_USDV LP',
+    lpAddresses: {
+      111: '',
+      106: '0x5bF6d526C5C0AdfEA5853941f7B59261ea071Da6',
+    },
+    token: serializedTokens.usdv,
+    quoteToken: serializedTokens.busd,
+  },
+  // {
+  //   theirPid: 16,
+  //   ourPid: 13,
+  //   ...WagFarm,
+  //   lpSymbol: 'WBTC_USDV LP',
+  //   lpAddresses: {
+  //     111: '',
+  //     106: '0x90724ea2D9D9decE420C9413850401DA9dccb514',
+  //   },
+  //   token: serializedTokens.wbtc,
+  //   quoteToken: serializedTokens.usdv,
+  // },
+  // {
+  //   theirPid: 17,
+  //   ourPid: 14,
+  //   ...WagFarm,
+  //   lpSymbol: 'DAI_USDV LP',
+  //   lpAddresses: {
+  //     111: '',
+  //     106: '0x0a2c396e388Edb05BbAb98F511BFceC11f643226',
+  //   },
+  //   token: serializedTokens.dai,
+  //   quoteToken: serializedTokens.usdv,
+  // },
 ]
 
 export default autoFarms
