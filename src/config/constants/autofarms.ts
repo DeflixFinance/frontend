@@ -173,30 +173,30 @@ const autoFarms: SerializedAutoFarmConfig[] = [
     token: serializedTokens.usdv,
     quoteToken: serializedTokens.busd,
   },
-  // {
-  //   theirPid: 16,
-  //   ourPid: 13,
-  //   ...WagFarm,
-  //   lpSymbol: 'WBTC_USDV LP',
-  //   lpAddresses: {
-  //     111: '',
-  //     106: '0x90724ea2D9D9decE420C9413850401DA9dccb514',
-  //   },
-  //   token: serializedTokens.wbtc,
-  //   quoteToken: serializedTokens.usdv,
-  // },
-  // {
-  //   theirPid: 17,
-  //   ourPid: 14,
-  //   ...WagFarm,
-  //   lpSymbol: 'DAI_USDV LP',
-  //   lpAddresses: {
-  //     111: '',
-  //     106: '0x0a2c396e388Edb05BbAb98F511BFceC11f643226',
-  //   },
-  //   token: serializedTokens.dai,
-  //   quoteToken: serializedTokens.usdv,
-  // },
+  {
+    theirPid: 16,
+    ourPid: 13,
+    ...WagFarm,
+    lpSymbol: 'WBTC_USDV LP',
+    lpAddresses: {
+      111: '',
+      106: '0x90724ea2D9D9decE420C9413850401DA9dccb514',
+    },
+    token: serializedTokens.wbtc,
+    quoteToken: serializedTokens.usdv,
+  },
+  {
+    theirPid: 17,
+    ourPid: 14,
+    ...WagFarm,
+    lpSymbol: 'DAI_USDV LP',
+    lpAddresses: {
+      111: '',
+      106: '0x0a2c396e388Edb05BbAb98F511BFceC11f643226',
+    },
+    token: serializedTokens.dai,
+    quoteToken: serializedTokens.usdv,
+  },
 ]
 
 export default autoFarms

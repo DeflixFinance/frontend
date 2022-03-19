@@ -58,6 +58,13 @@ const getFarmBaseTokenPrice = (
       : BIG_ZERO
   }
 
+  if (quoteTokenFarm.quoteToken.symbol === tokens.busd.symbol) {
+    const quoteTokenInBusd = quoteTokenFarm.tokenPriceVsQuote
+    return hasTokenPriceVsQuote && quoteTokenInBusd
+      ? new BigNumber(farm.tokenPriceVsQuote).times(quoteTokenInBusd)
+      : BIG_ZERO
+  }
+
   // Catch in case token does not have immediate or once-removed BUSD/WBNB quoteToken
   return BIG_ZERO
 }
