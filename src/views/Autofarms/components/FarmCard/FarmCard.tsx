@@ -85,7 +85,13 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, apr, apy, cakePrice, account 
   const fullBalanceNumber = new BigNumber(fullBalance)
   const fullBalanceValueFormatted = `$${formatNumber(fullBalanceNumber.times(lpPrice).toNumber(), 2)}`
   const hasStakedBalance = fullBalanceNumber.gt(0)
-  const className = hasStakedBalance ? "fcard user-staked" : "fcard"
+  let className = hasStakedBalance ? "fcard user-staked" : "fcard"
+
+  // Feature VLX_BUSD LP, VLX_BITORB LP and VLX_USDT LP
+  const featured = farm.lpSymbol === "VLX_BUSD LP" || farm.lpSymbol === "VLX_BITORB LP" || farm.lpSymbol === "VLX_USDT LP";
+  if (featured) {
+    className += " featured"
+  }
 
   const displayApr = apr?.toLocaleString('en-US', { maximumFractionDigits: 2 })
   const displayApy = apy?.toLocaleString('en-US', { maximumFractionDigits: 2 })
@@ -120,6 +126,11 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, apr, apy, cakePrice, account 
           <Balance color='#fff' fontSize='16px' value={totalLiquidity.liquidity} prefix='$' suffix={totalLiquidity.suffix} decimals={2} />
           <Text>TVL</Text>
         </Flex>
+        {(featured && !hasStakedBalance) && (
+            <Flex flexDirection="column">
+              <Text fontWeight="bold">Featured</Text>
+            </Flex>
+        )}
         {hasStakedBalance && (
           <Flex flexDirection="column">
             <Balance color='#fff' fontSize='16px' value={fullBalanceNumber.times(lpPrice).toNumber()} decimals={2} prefix='$' />

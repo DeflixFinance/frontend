@@ -12,3 +12,7 @@
 .fcard.user-staked {
     border: 2px solid #c2374f;
 }
+
+.fcard.featured {
+    border: 2px solid #006cff;
+}
