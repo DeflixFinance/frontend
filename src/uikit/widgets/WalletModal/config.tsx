@@ -15,7 +15,13 @@ const connectors: Config[] = [
     icon: Metamask,
     connectorId: ConnectorNames.Injected,
     priority: 1,
-  } 
+  },
+  {
+    title: 'WalletConnect',
+    icon: WalletConnect,
+    connectorId: ConnectorNames.WalletConnect,
+    priority: 2,
+  }  
 ]
 
 export default connectors

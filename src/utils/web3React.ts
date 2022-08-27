@@ -1,5 +1,7 @@
 import { InjectedConnector } from '@web3-react/injected-connector'
+import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 import { ethers } from 'ethers'
+import { ConnectorNames } from 'uikit'
 import getNodeUrl from './getRpcUrl'
 
 const POLLING_INTERVAL = 5000
@@ -8,8 +10,14 @@ const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
 
 const injected = new InjectedConnector({ supportedChainIds: [chainId] })
 
+const walletconnect = new WalletConnectConnector({
+    rpc: { [chainId]: rpcUrl },
+    qrcode: true   
+})
+
 export const connectorsByName = {
-    "injected": injected
+    [ConnectorNames.Injected]: injected,
+    [ConnectorNames.WalletConnect]: walletconnect
 }
 
 export const getLibrary = (provider): ethers.providers.Web3Provider => {
