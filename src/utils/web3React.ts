@@ -11,9 +11,11 @@ const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
 const injected = new InjectedConnector({ supportedChainIds: [chainId] })
 
 const walletconnect = new WalletConnectConnector({
-    rpc: { [chainId]: rpcUrl },
+    rpc: { [chainId]: rpcUrl },    
+    chainId: chainId,
     qrcode: true   
 })
+const w = walletconnect.walletConnectProvider
 
 export const connectorsByName = {
     [ConnectorNames.Injected]: injected,
