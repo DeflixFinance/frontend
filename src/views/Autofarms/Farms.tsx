@@ -74,7 +74,21 @@ const Farms: React.FC = () => {
         return { ...farm, apr, apy }
       })
 
-      return farmsToDisplayWithAPR
+      console.log(farmsToDisplayWithAPR);
+
+      // Custom reorder VLX BUSD, VLX BITORBIT, VLX USDT, [...]
+      let reorderedFarms = new Set([]);
+      const vlx_busd = farmsToDisplayWithAPR.find((el) => el.lpSymbol === "VLX_BUSD LP");
+      const vlx_bitorb = farmsToDisplayWithAPR.find((el) => el.lpSymbol === "VLX_BITORB LP");
+      const vlx_usdt = farmsToDisplayWithAPR.find((el) => el.lpSymbol === "VLX_USDT LP");
+
+      reorderedFarms.add(vlx_busd);
+      reorderedFarms.add(vlx_bitorb);
+      reorderedFarms.add(vlx_usdt);
+
+      farmsToDisplayWithAPR.forEach((el) => reorderedFarms.add(el));
+
+      return Array.from(reorderedFarms);
     },
     [cakePrice]
   )
